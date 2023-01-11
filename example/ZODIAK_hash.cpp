@@ -1,4 +1,4 @@
-#include "ZODIAK.hpp"
+#include "Zodiak.hpp"
 #include <iostream>
 int
 main()
@@ -13,7 +13,7 @@ main()
   xoodyak::hash(msg, msg_len, out);
 
   std::cout << "Message         : " << to_hex(msg, msg_len) << std::endl;
-  std::cout << "ZODIAK Digest  : " << to_hex(out, xoodyak::DIGEST_LEN)
+  std::cout << "Zodiak Digest  : " << to_hex(out, xoodyak::DIGEST_LEN)
             << std::endl;
 
   std::free(msg);

@@ -1,4 +1,4 @@
-#include "ZODIAK.hpp"
+#include "Zodiak.hpp"
 #include <benchmark/benchmark.h>
 #include <string.h>
 static void

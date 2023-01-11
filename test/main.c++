@@ -1,4 +1,4 @@
-#include "test/test_ZODIAK.hpp"
+#include "test/test_Zodiak.hpp"
 #include <iostream>
 int 
 main ()
@@ -17,6 +17,6 @@ main ()
             test_ZODIAK::aead(j, i, test_ZODIAK::mutate_t::none);
         }
     }
-    std::cout << "[test] ZODIAK AEAD works !!!" << std::endl;
+    std::cout << "[test] Zodiak AEAD works !!!" << std::endl;
     return EXIT_SUCCESS;
 }

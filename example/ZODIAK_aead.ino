@@ -1,4 +1,4 @@
-#include "ZODIAK.hpp"
+#include "Zodiak.hpp"
 #include <cassert>
 #include <iostream>
 int 
@@ -31,7 +31,7 @@ main()
         assert((txt[i] ^ dec[i]) == 0u);
     }
 
-    std::cout << "ZODIAK AEAD" << std::endl << std::endl;
+    std::cout << "Zodiak AEAD" << std::endl << std::endl;
     std::cout << "Key                : " << to_hex(key, knt_len) << std::endl;
     std::cout << "Nonce              : " << to_hex(nonce, knt_len) << std::endl;
     std::cout << "Associated Data    : " << to_hex(data, ad_len) << std::endl;

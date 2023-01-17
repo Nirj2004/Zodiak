@@ -38,5 +38,17 @@ def encrypt(key: bytes, nonce: bytes, text: bytes) -> Tuple[bytes, bytes]:
     tag_ = tag.tobytes()
     return enc_, tag_
 def decrypt(
-    key: bytes, nonce: bytes, 
-)
+    key: bytes, nonce: bytes, tag: bytes, data: bytes, enc: bytes 
+) -> Tuple[bool, bytes]:
+    k_len = len(key)
+    n_len = len(nonce)
+    t_len = len(text)
+    dt_len = len(data)
+    ct_len = len(enc)
+    assert k_len == 16 , "Zodiak AEAD takes 16 -bytes secret key"
+    assert n_len == 16, "Zodiak AEAD takes 16 -bytes nonce"
+    assert t_len == 16, "Zodiak AEAD takes 16 -bytes authentication tag"
+    key_ = np.frombuffer(key, dtype=u8)
+    nonce_ = np.frombuffer(nonce, dtype=u8)
+    tag_ = np.frombuffer(tag, dtype=u8)
+    

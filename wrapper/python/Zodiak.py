@@ -51,4 +51,11 @@ def decrypt(
     key_ = np.frombuffer(key, dtype=u8)
     nonce_ = np.frombuffer(nonce, dtype=u8)
     tag_ = np.frombuffer(tag, dtype=u8)
-    
+    args = [uint8_tp, uint8_tp, uint8_tp, uint8_tp, len_t, uint8_tp, uint8_tp, len_t]
+    SO_LIB.decrypt.argtypes = args
+    SO_LIB.decrypt.restype = bool_t
+    f = SO_LIB.decrypt(key_, nonce_, tag_, data_, dt_len, enc_, dec, ct_len)
+    dec_ = dec.tobytes()
+    return f, dec_
+if __name__ == "__main__":
+    print("Use `Zodiak` as library module!")

@@ -58,7 +58,7 @@ $ unzip -v
 UnZip 6.00 of 20 April 2009, by Debian. Original by Info-ZIP.
 ```
 
-- For benchmarking Xoodyak implementation on CPU, you'll need to have `google-benchmark` headers and library installed; follow [this](https://github.com/google/benchmark/tree/60b16f1#installation)
+- For benchmarking Zodiak implementation on CPU, you'll need to have `google-benchmark` headers and library installed; follow [this](https://github.com/google/benchmark/tree/60b16f1#installation)
 
 - For ensuring conformance with KATs ( as submitted to NIST LWC call ), you need to have `python3`, along with dependencies which can be easily installed using `pip`
 

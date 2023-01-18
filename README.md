@@ -19,7 +19,7 @@ Algorithm | What does it do ? | Input | Output
 
 > **Warning** Associated data is never encrypted.
 
-In this repository, I'm keeping a zero-dependency, header-only and easy-to-use C++ library ( using C++20 features ), which implements Xoodyak specification. Along with that I also maintain Python wrapper API, which under the hood makes use of C-ABI conformant shared library object.
+In this repository, I'm keeping a zero-dependency, header-only and easy-to-use C++ library ( using C++20 features ), which implements Zodiak specification. Along with that I also maintain Python wrapper API, which under the hood makes use of C-ABI conformant shared library object.
 
 > To learn more about AEAD, see [here](https://en.wikipedia.org/wiki/Authenticated_encryption)
 

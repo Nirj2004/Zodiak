@@ -73,7 +73,7 @@ $ sudo apt-get install python3-pip
 $ python3 -m pip install -r wrapper/python/requirements.txt --user
 ```
 
-> **Note** It can be a better idea to isolate Xoodyak Python API dependency installation from system Python installation, using `virtualenv`
+> **Note** It can be a better idea to isolate Zodiak Python API dependency installation from system Python installation, using `virtualenv`
 
 ```bash
 # install virtualenv itself
